@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title> My KodeGo Profile</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -11,7 +12,7 @@
         background-color: red;
         border: none;
         color: white;
-        padding: 30px 30px;
+        padding: 25px 25px;
         display: inline-block;
         text-decoration: none;
         text-align: center;
@@ -19,38 +20,96 @@
         margin: 4px 2px;
         cursor: pointer;
       }
+      * {
+        box-sizing: border-box;
+      }
+      .column {
+        float:inline-start;
+        width: 50%;
+        padding: 20px;
+        height: 250px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      img{
+        max-width: 30%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: bottom;
+      }
+
+      body{
+        max-width: 1000px;
+        margin: 0 auto;
+        
+      }
+      
+      .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      }
+
+      ::marker {
+      color: green
+      }
     </style>
   </head>
-  <body style="background-color: beige">
-    <p style="font-size: 20">
+
+  <body style="background-color: beige;">
+    <p style="font-size: 25px">
       Hello! You can call me
-      <b>Christian or Marc, or Christian Marc,</b> whichever you like. XD
+      <b>Christian or Marc, or Christian Marc,</b> 
+      which ever you like. XD
       <br />
-      I'm from <b>Las Pinas</b>.
+      I'm 36 years old, residing in
+      <b>Las Pinas City</b>.
       <br />
-      Hoping to be great at <b>Web Development and have a career in it</b>.
+      Hoping to be great at 
+      <b>Web Development and have a career in it</b>.
       <br />
       Thanks!
     </p>
-    <img src="./pic.jpg" height="200" />
-    <h1>My Strengths:</h1>
-    <ul>
-      <li>Goal Oriented</li>
-      <li>Determined</li>
-      <li>Resourceful</li>
-    </ul>
-    <h1>My Weaknesses:</h1>
-    <ul>
-      <li>Timid</li>
-      <li>Easily Distracted</li>
-      <li>Pessimistic (sometimes)</li>
-    </ul>
-    <h1>Hobbies and Interests:</h1>
-    <ul>
-      <li>Playing Video Games (Mostly Singple Player or Story Driven Games)</li>
+
+    <img src="./pic.jpg" height="200" class="center"/>
+    
+    <br>
+
+    <div class="row">
+      <div class="column" style="background-color: #aaa">
+        <h1 style="color: green; font-size: 40px;">My Strengths:</h1>
+        <ul style="font-size: 25px;">
+          <li>Goal Oriented</li>
+          <li>Determined</li>
+          <li>Resourceful</li>
+        </ul>
+      </div>
+
+      <div class="column" style="background-color: #bbb">
+        <h1 style="color: red; font-size: 40px;""> My Weaknesses: </h1>
+      <ul style="font-size: 25px;">
+        <li>Timid</li>
+        <li>Easily Distracted</li>
+        <li>Pessimistic (sometimes)</li>
+      </ul>
+    </div>
+  </div>
+  
+    <h1 style="color: blue;"> Hobbies and Interests: </h1>
+    <ul style="font-size: 25px;">
+      <li>Playing Video Games (Mostly Single Player or Story Driven Games)</li>
       <li>Hopefully Coding!</li>
       <li>Playing Badminton with my Kids</li>
     </ul>
-    <a href="./2nd Page.html" class="button">NEXT</a>
+
+    <a href="./About Me.html" class="button">About Me</a>
+    <!-- <a href="./Game Page.html" class="button">GAME</a> -->
   </body>
 </html>

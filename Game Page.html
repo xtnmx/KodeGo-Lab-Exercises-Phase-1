@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .button {
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 30px 30px;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Page</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 id="gameName">Black Jack</h1>
+    <p id="input1"></p>
+    <p id="input2"></p>
+
+    <button onclick="startGame()">START GAME</button>
+    <br />
+    <a href="index.html" class="button">Back to Profile</a>
+
+    <script>
+      function startGame() {
+        gameName.textContent = "Game has Started";
+      }
+    </script>
+  </body>
+</html>
