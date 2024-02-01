@@ -1,112 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> My KodeGo Profile</title>
+    <title>My KodeGo Profile</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <h6>Hi I'm</h6>
-    <h1 style="color: gold; font-size: 50px">Christian Marc Evangelio</h1>
-    <style>
-      .button {
-        background-color: red;
-        border: none;
-        color: white;
-        padding: 25px 25px;
-        display: inline-block;
-        text-decoration: none;
-        text-align: center;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      .column {
-        float:inline-start;
-        width: 50%;
-        padding: 20px;
-        height: 250px;
-      }
-
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-      img{
-        max-width: 30%;
-        height: auto;
-        border-radius: 10px;
-        object-fit: cover;
-        object-position: bottom;
-      }
-
-      body{
-        max-width: 1000px;
-        margin: 0 auto;
-        
-      }
-      
-      .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      }
-
-      ::marker {
-      color: green
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <h4>Hi I'm</h4>
+    <h1 style="color: brown; font-size: 50px; font-family: cursive">
+      Christian Marc Evangelio
+    </h1>
   </head>
 
-  <body style="background-color: beige;">
-    <p style="font-size: 25px">
+  <body style="background-color: beige; max-width: 1000px; margin: 0 auto">
+    <p style="font-size: 25px; text-align: justify">
       Hello! You can call me
-      <b>Christian or Marc, or Christian Marc,</b> 
-      which ever you like. XD
-      <br />
-      I'm 36 years old, residing in
-      <b>Las Pinas City</b>.
-      <br />
-      Hoping to be great at 
-      <b>Web Development and have a career in it</b>.
-      <br />
-      Thanks!
+      <b>Christian or Marc, or Christian Marc,</b>
+      which ever you like. <br />
+      XD I'm 36 years old, residing in
+      <b>Las Pinas City</b>. Currently studying Front-End Dev while maintaining
+      ang watching over my shop. It's a bit of a hassle because of the
+      distractions, but I must prevail for my future. Also hyped on how the
+      back-end works.<br />
+      Hoping to be great at
+      <b>Web Development</b> and have a career in it. Thank You!
     </p>
 
-    <img src="./pic.jpg" height="200" class="center"/>
-    
-    <br>
+    <img id="profilepic" src="./pic.jpg" class="center" />
 
     <div class="row">
-      <div class="column" style="background-color: #aaa">
-        <h1 style="color: green; font-size: 40px;">My Strengths:</h1>
-        <ul style="font-size: 25px;">
+      <div
+        class="column"
+        style="background-color: #aaa; box-sizing: border-box"
+      >
+        <h1 style="color: green; font-size: 40px">My Strengths:</h1>
+        <ul style="font-size: 25px; box-sizing: border-box">
           <li>Goal Oriented</li>
           <li>Determined</li>
           <li>Resourceful</li>
         </ul>
       </div>
 
-      <div class="column" style="background-color: #bbb">
-        <h1 style="color: red; font-size: 40px;""> My Weaknesses: </h1>
-      <ul style="font-size: 25px;">
-        <li>Timid</li>
-        <li>Easily Distracted</li>
-        <li>Pessimistic (sometimes)</li>
-      </ul>
+      <div
+        class="column"
+        style="background-color: #bbb; box-sizing: border-box"
+      >
+        <h1 style="color: red; font-size: 40px; box-sizing: border-box">
+          My Weaknesses:
+        </h1>
+        <ul style="font-size: 25px; box-sizing: border-box">
+          <li>Timid</li>
+          <li>Easily Distracted</li>
+          <li>Pessimistic (sometimes)</li>
+        </ul>
+      </div>
     </div>
-  </div>
-  
-    <h1 style="color: blue;"> Hobbies and Interests: </h1>
-    <ul style="font-size: 25px;">
-      <li>Playing Video Games (Mostly Single Player or Story Driven Games)</li>
+
+    <h1 style="color: blue; padding-top: 50px">Hobbies and Interests:</h1>
+    <ul style="font-size: 25px">
+      <li>Playing Video Games (Mostly Single Player or Story Driven Games).</li>
+      <li>Eating out.</li>
       <li>Hopefully Coding!</li>
-      <li>Playing Badminton with my Kids</li>
+      <li>Playing Badminton with my Kids.</li>
+      <li>Also playing Mobile Legends with my Fam.</li>
     </ul>
 
     <a href="./About Me.html" class="button">About Me</a>

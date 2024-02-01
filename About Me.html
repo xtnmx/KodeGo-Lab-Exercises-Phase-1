@@ -3,35 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>About Me</title>
-    <style>
-      .button {
-        background-color: red;
-
-        color: white;
-        padding: 25px 25px;
-        display: inline-block;
-        text-decoration: none;
-        text-align: center;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-      }
-      table.center {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      table,
-      th,
-      td {
-        border: 1px solid black;
-      }
-
-      ::marker {
-        color: red;
-      }
-    </style>
   </head>
   <h1 id="top">Navigate Options:</h1>
   <nav style="font-size: 25px">
@@ -45,7 +18,7 @@
     <section>
       <div><h1 id="act">ACTIVITIES</h1></div>
       <div>
-        <table class="center" border="" style="table-color: grey">
+        <table border="collapse" style="margin-left: auto; margin-right: auto">
           <thead>
             <td>Time</td>
             <td>Monday</td>
@@ -110,26 +83,43 @@
           </tbody>
         </table>
       </div>
-      <br />
-      <br />
-      <a href="#top">Back to Top</a>
     </section>
 
-    <br />
-    <br />
-    <br />
-
     <section>
-      <h1 id="med">MEDIA</h1>
+      <h1 id="med">MEDIA GALLERY</h1>
+      <h1>Screenshots</h1>
+
+      <div class="row" style="box-sizing: border-box">
+        <div class="grid" style="box-sizing: border-box">
+          <img src="./1.jpg" style="width: 100%; box-sizing: border-box" />
+          <img src="./2.jpg" style="width: 100%; box-sizing: border-box" />
+          <img src="./3.jpg" style="width: 100%; box-sizing: border-box" />
+          <img src="./4.jpg" style="width: 100%; box-sizing: border-box" />
+        </div>
+        <div class="grid" style="box-sizing: border-box">
+          <img src="./5.jpg" style="width: 100%; box-sizing: border-box" />
+          <img src="./6.jpg" style="width: 100%; box-sizing: border-box" />
+          <img src="./7.jpg" style="width: 100%; box-sizing: border-box" />
+          <img src="./8.jpg" style="width: 100%; box-sizing: border-box" />
+        </div>
+        <div class="grid" style="box-sizing: border-box">
+          <img src="./9.jpg" style="width: 100%; box-sizing: border-box" />
+          <img src="./10.jpg" style="width: 100%; box-sizing: border-box" />
+          <img src="./11.jpg" style="width: 100%; box-sizing: border-box" />
+          <img src="./12.jpg" style="width: 100%; box-sizing: border-box" />
+        </div>
+      </div>
+
+      <h1 style="font-size: 30px">Video Clips</h1>
       <div>
-        <video src="Dinraal.mp4" controls height="300px"></video>
-        <span><h3>Getting Dinraal's Fangs</h3></span>
+        <video src="Dinraal.mp4" controls height="300px" class="center"></video>
+        <span><h3 class="center">Getting Dinraal's Fangs</h3></span>
         <br />
-        <video src="Talus.mp4" controls height="300px"></video>
-        <div><h3>1 Hitting Talus</h3></div>
+        <video src="Talus.mp4" controls height="300px" class="center"></video>
+        <div><h3 class="center">1-Hitting Talus</h3></div>
         <br />
-        <video src="Frox.mp4" controls height="300px"></video>
-        <div><h3>Clean Sweeping Frox</h3></div>
+        <video src="Frox.mp4" controls height="300px" class="center"></video>
+        <div><h3 class="center">Clean Sweeping Frox</h3></div>
         <br />
       </div>
       <a href="#top">Back to Top</a>
@@ -143,27 +133,38 @@
       <h1 id="form">CONTACT FORM</h1>
       <form action="">
         <div>
+          <h3 style="margin-bottom: 0%">Please tell us your name:</h3>
           <input type="text" placeholder="First Name" />
           <input type="text" placeholder="Last Name" />
           <div>
-            <h3>Select an option:</h3>
+            <h3 style="margin-bottom: 0%">Select an option:</h3>
           </div>
           <div>
             <select name="" id="">
-              <option value="">General Inquiry</option>
-              <option value="">Products and Services</option>
-              <option value="">Careers</option>
+              <optgroup label="FAQs">
+                <option value="">General Inquiry</option>
+                <option value="">Products and Services</option>
+                <option value="">Careers</option>
+              </optgroup>
+              <optgroup label="Gaming Related">
+                <option value="">Tips & Tricks</option>
+                <option value="">Reviews</option>
+                <option value="">Where to buy?</option>
+              </optgroup>
             </select>
           </div>
         </div>
-        <div><h3>Please leave us a Feedback:</h3></div>
+        <div>
+          <h3 style="margin-bottom: 0%">Please leave us a Feedback:</h3>
+        </div>
         <div>
           <textarea
             name=""
             id=""
-            cols="30"
+            cols="60"
             rows="10"
             placeholder="Message"
+            style="margin-top: 0%"
           ></textarea>
         </div>
         <br />
